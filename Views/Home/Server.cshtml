@@ -1,0 +1,45 @@
+﻿
+
+
+@{
+    ViewData["Title"] = "Server";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+
+
+
+
+<table class="table table-responsive table-bordered">
+    
+    <tr>
+        <td><h4>Operating System :</h4></td>
+        <td><span class="btn btn-lg btn-primary">@System.Runtime.InteropServices.RuntimeInformation.OSDescription</span></td>
+    </tr>
+    <tr>
+        <td><h4>Architecture     :</h4></td>
+        <td><span class="btn btn-lg btn-primary">@System.Runtime.InteropServices.RuntimeInformation.OSArchitecture</span></td>
+    </tr>
+    <tr>
+        <td><h4>Framework        : </h4></td>
+        <td><span class="btn btn-lg btn-primary">@System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription</span></td>
+    </tr>
+    <tr>
+        <td><h4>Machine Name     : </h4></td>
+        <td><span class="btn btn-lg btn-primary">@Environment.MachineName</span></td>
+    </tr>
+    <tr>
+        <td><h4>Processor Count  : </h4></td>
+        <td><span class="btn btn-lg btn-primary">@Environment.ProcessorCount</span></td>
+    </tr>
+
+   
+</table>
+
+
+
+
+
+
